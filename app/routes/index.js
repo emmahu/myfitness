@@ -3,7 +3,8 @@ import Ember from 'ember';
 var IndexRoute = Ember.Route.extend({
   queryParams: {
     type: {
-      refreshModel: true
+      refreshModel: true,
+      replace: true
     }
   },
 
