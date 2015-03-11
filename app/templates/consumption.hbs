@@ -1,0 +1,28 @@
+<ul class='is-profile'>
+  <li>
+    <p>
+      <span>Date</span>
+      <span>Calorie Intake</span>
+      <span>Calorie Burnt</span>
+    </p>
+  </li>
+  {{#each profile in controller}}
+    {{!-- {{#link-to 'book' book.id}} --}}
+    <li>
+      <p>
+        <span{{input type="date" value=profile.date disabled=isNotEditing}}</span>
+        <span>{{input type="calorieintake" value=profile.calorieintake disabled=isNotEditing}}</span>
+        <span>{{input type="calorieburnt" value=profile.calorieburnt disabled=isNotEditing}}</span>
+      </p>
+      </li>
+    {{!-- {{/link-to}} --}}
+  {{/each}}
+
+</ul>
+  <footer>
+    {{#if isNotEditing}}
+      {{#link-to 'book.edit' id}}Edit{{/link-to}}
+    {{else}}
+      <a {{action 'save' this}}>Save</a>
+    {{/if}}
+  </footer>

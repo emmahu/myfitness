@@ -1,6 +1,13 @@
 import Ember from 'ember';
 
 var IndexRoute = Ember.Route.extend({
+
+    queryParams: {
+        type: {
+          refreshModel: true
+        }
+    },
+
   setupController: function(controller, model) {
     controller.set('model', model);
     // var data = this.store.find('article');
@@ -52,7 +59,10 @@ var IndexRoute = Ember.Route.extend({
     //     summary:'Sometimes mustering up the motivation to hit the gym hard all comes down to having the perfect playlist. Lucky for us, Spotify teamed up with Insanity creator Shaun T (have you tried his Insanity Max:30 yet?) and music and exercise expert Dr. Costas Karageorghis to create the ultimate in workout-boosting playlists. Shaun T identified the top workouts of 2015, while Dr. Costas found songs with the ideal lyrics, rythym, melody, and beats per minute to complement each one. Simply find your fave sweat session below, download the accompanying playlist, crank the volume, and get moving.'
     //   }
     // ];
-    return this.store.find('article');
+    console.log(params);
+    // return this.store.findQuery('article', params);
+    return this.store.find('article', params);
+
   }
 });
 export default IndexRoute;
