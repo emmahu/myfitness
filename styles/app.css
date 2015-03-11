@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'HelveticaNeue-Light',  Helvetica, Arial, Sans-Serif;
+}
+body{
+  /*margin: 0;*/
+  /*padding: 0;*/
+  min-height: 700px;
+  /*font-family: 'HelveticaNeue-Light', Helvetica, Arial, Sans-Serif;*/
+  color: black;
+  padding-top: 50px;
+  font-size: 16px;
+}
+header{
+  position: fixed;
+  top: 0;
+  height: 50px;
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  background-color: lightblue;
+  color:white;
+}
+header .nav{
+  display: none;
+  list-style-type: none;
+  text-align: left;
+  background-color: rgba(173,216,230, 0.9);
+  font-size:16px;
+  color: #fff;
+  font-weight: bold;
+}
+.nav li{
+  padding-left: 15px;
+  text-decoration: none;
+  line-height: 40px;
+  height: 40px;
+  border-top:1px solid white;
+}
+
+a:link, a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+header a:link, header a:visited {
+  color: white;
+}
+
+/*sth need to be added*/
+/*a:hover{
+
+}*/
+a.menu-button{
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 30px;
+  height: 100%;
+}
+div.articles-list, div.article, div.is-article{
+  padding: 10px;
+}
+/*div.article{
+  padding:10px;
+  margin:10px;
+}*/
+div.article-title{
+  font-weight: bold;
+  font-size: 20px;
+}
+div.is-article div.sub-title{
+  font-weight: bold;
+  font-size: 18px;
+}
+div.is-article img{
+  display: block;
+  margin: 10px auto;
+  max-width: 90%;
+}
+div.article-image {
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #eeffff;
+  margin: 10px 0;
+}
+div.article{
+  border-bottom:1px solid gray;
+}
+div.more-articles{
+  padding:10px;
+}
+div.more-articles > div:first-child{
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  /*line-height: 100%;*/
+}
+div.recommendation{
+  position: relative;
+  clear:both;
+  margin-bottom: 5px;
+  min-height: 100px;
+}
+div.recommendation > img{
+  float: left;
+  margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}

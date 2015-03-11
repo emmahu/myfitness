@@ -1,0 +1,12 @@
+<div class="articles-list">
+  {{#each article in controller}}
+    {{#link-to 'article' article.id}}
+    <div class="article">
+      <div class="article-title"> {{article.title}}</div>
+      <div class="article-date">{{article.date}}</div>
+      <div class="article-image" {{bind-attr style=article.imgStyle}}></div>
+      <div class="article-summary">{{article.summary}}</div>
+    </div>
+    {{/link-to}}
+  {{/each}}
+</div>
