@@ -1,10 +1,14 @@
 <header>
   <a class="menu-button" href="javascript:$('.nav').slideToggle('fast');">☰</a>
   <h4>
-    {{#link-to 'index'}}MY FITNESS{{/link-to}}
+    {{#link-to 'index' (query-params type='')}}MY FITNESS{{/link-to}}
   </h4>
   <ul class='nav'>
-    <li>WORKOUTS</li>
+    <li>
+      {{#link-to 'index' (query-params type='workout')}}
+        WORKOUTS
+      {{/link-to}}
+    </li>
     <li>WORKOUT VIDEOS</li>
     <li>HEALTHY EATING</li>
   </ul>
