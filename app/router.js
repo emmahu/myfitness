@@ -6,8 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('index', {path: '/'});
-  this.resource('index',  {path: '/articles/:type'});
+  // this.resource('index', {path: '/'});
+  // this.resource('index',  {path: '/articles/:type'});
   this.resource('article', { path: '/article/:article_id'} );
 });
 
