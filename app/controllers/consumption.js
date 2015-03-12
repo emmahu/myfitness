@@ -10,14 +10,25 @@ var ConsumptionController = Ember.ArrayController.extend({
         console.log(consumption.get('id'));
         consumption.save();
       });
-      // var consumptions = this.get('model');
-      // console.log(consumptions);
-      // for (var i = 0; i < consumptions.length; i++) {
-      //   consumptions[i].save();
-      // }
     },
     edit: function() {
       this.set('isNotEditing', false);
+    },
+    create: function() {
+      this.set('isNotEditing', false);
+      this.store.createRecord('consumption',{
+        date: new Date().toISOString().substring(0, 10),
+        eat: 0,
+        workout: 0
+      });
+    },
+    delete: function(id) {
+      var shouldDelete = confirm('Are you sure you want to delete this record?');
+      if(shouldDelete) {
+        this.store.find('consumption', id).then(function (consumption) {
+          consumption.destroyRecord();
+        });
+      }
     }
   },
   isNotEditing: true

@@ -9,6 +9,7 @@ var ArticleRoute = Ember.Route.extend({
 
   // },
   model: function(params) {
+    this.activate();
     return this.store.find('article', params.article_id);
   },
 

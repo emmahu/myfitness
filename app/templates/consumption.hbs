@@ -32,6 +32,10 @@
             {{input type="number" value=profile.workout disabled=isNotEditing}}
           {{/if}}
         </span>
+        {{#if isNotEditing}}
+        {{else}}
+          <button {{action "delete" profile.id}} class="destroy">✖</button>
+        {{/if}}
       </p>
     </li>
     {{!-- {{/link-to}} --}}
@@ -39,6 +43,7 @@
 
 </ul>
 <footer>
+  <a {{action 'create'}}>New</a>
     {{#if isNotEditing}}
       <a {{action 'edit'}}>Edit</a>
     {{else}}
