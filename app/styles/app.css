@@ -33,6 +33,7 @@ header .nav{
   font-weight: bold;
 }
 .nav li{
+  /*display:none;*/
   padding-left: 15px;
   text-decoration: none;
   line-height: 40px;
@@ -56,11 +57,11 @@ header a:link, header a:visited {
 a.menu-button{
   position: absolute;
   display: block;
-  left: 0;
+  left: 10px;
   width: 30px;
   height: 100%;
 }
-div.articles-list, div.article, div.is-article{
+div.articles-list, div.article, div.is-article, ul.is-profile{
   padding: 10px;
 }
 /*div.article{
@@ -78,6 +79,7 @@ div.is-article div.sub-title{
 div.is-article img{
   display: block;
   margin: 10px auto;
+  /*margin: 10px;*/
   max-width: 90%;
 }
 div.article-image {
@@ -111,4 +113,29 @@ div.recommendation > img{
   margin-right: 10px;
   margin-top: 0;
   margin-bottom: 0;
+}
+ul.is-profile li p span{
+  display: inline-block;
+  width: 32.5%;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+ul.is-profile li p span input{
+  width: 100%;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  font-size:16px;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  background-color: lightblue;
+  color:white;
 }

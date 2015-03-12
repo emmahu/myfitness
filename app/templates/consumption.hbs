@@ -10,19 +10,20 @@
     {{!-- {{#link-to 'book' book.id}} --}}
     <li>
       <p>
-        <span{{input type="date" value=profile.date disabled=isNotEditing}}</span>
-        <span>{{input type="calorieintake" value=profile.calorieintake disabled=isNotEditing}}</span>
-        <span>{{input type="calorieburnt" value=profile.calorieburnt disabled=isNotEditing}}</span>
+        {{!-- <span {{action "editTodo" on = "doubleClick"}}>{{profile.date}}</span> --}}
+        <span>{{input type="date" value=profile.date disabled=isNotEditing}}</span>
+        <span>{{input type="eat" value=profile.eat disabled=isNotEditing}}</span>
+        <span>{{input type="workout" value=profile.workout disabled=isNotEditing}}</span>
       </p>
-      </li>
+    </li>
     {{!-- {{/link-to}} --}}
   {{/each}}
 
 </ul>
-  <footer>
+<footer>
     {{#if isNotEditing}}
-      {{#link-to 'book.edit' id}}Edit{{/link-to}}
+      <a {{action 'edit'}}>Edit</a>
     {{else}}
-      <a {{action 'save' this}}>Save</a>
+      <a {{action 'save'}}>Save</a>
     {{/if}}
-  </footer>
+</footer>

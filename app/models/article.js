@@ -5,10 +5,10 @@ var Article = DS.Model.extend({
   title: DS.attr('string'),
   date: DS.attr('string'),
   imgStyle: DS.attr('string'),
-  summary: DS.attr('string'),
+  // summary: DS.attr('string'),
   tags: DS.attr(),
   text: DS.attr(),
-  reccommendations: DS.attr()
+  recommendations: DS.attr()
 });
 
 export default Article;

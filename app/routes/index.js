@@ -9,7 +9,7 @@ var IndexRoute = Ember.Route.extend({
   },
 
   model: function(params) {
-    console.log(params);
+    // console.log(params);
     return this.store.find('article', params);
   }
 });

@@ -9,8 +9,21 @@
         WORKOUTS
       {{/link-to}}
     </li>
-    <li>WORKOUT VIDEOS</li>
-    <li>HEALTHY EATING</li>
+    <li>
+      {{#link-to 'index' (query-params type='video')}}
+        WORKOUT VIDEOS
+      {{/link-to}}
+    </li>
+    <li>
+      {{#link-to 'index' (query-params type='eating')}}
+        HEALTHY EATING
+      {{/link-to}}
+    </li>
+    <li>
+      {{#link-to 'consumption' (query-params type='consumption')}}
+        DIETARY PROFILE
+      {{/link-to}}
+    </li>
   </ul>
 </header>
 

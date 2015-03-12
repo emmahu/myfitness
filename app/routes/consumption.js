@@ -1,8 +1,9 @@
 import Ember from 'ember';
 
 var ConsumptionRoute = Ember.Route.extend({
+
   model: function() {
-    return this.find('consumption')
+    return this.store.find('consumption');
   }
 });
 

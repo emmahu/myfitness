@@ -1,14 +1,15 @@
 <div class="is-article">
   <div class="article-title">{{title}}</div>
-  <div class="article-date">01-30-2015</div>
+  <div class="article-date">{{date}}</div>
   <div class="article-detail">
     {{{text}}}
   </div>
   <div class="more-articles">
   <div>You Might Like</div>
+  {{!-- {{recommendations}} --}}
   {{#each r in recommendations}}
     <div class="recommendation">
-      <img {{bind-attr src=r.img}}/>
+      <img {{bind-attr src=r.imgStyle}}/>
       <span>{{r.title}}</span>
     </div>
   {{/each}}
