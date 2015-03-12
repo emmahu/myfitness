@@ -8,8 +8,12 @@
   <div>You Might Like</div>
   {{#each r in recommendations}}
     <div class="recommendation">
-      <img {{bind-attr src=r.imgStyle}}/>
-      <span>{{r.title}}</span>
+      <img {{bind-attr src=r.coverImage}}/>
+      <div>
+        {{#link-to 'article' r.id}}
+          {{r.title}}
+        {{/link-to}}
+      </div>
     </div>
   {{/each}}
   </div>
