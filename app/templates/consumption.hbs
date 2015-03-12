@@ -1,9 +1,9 @@
 <ul class='is-profile'>
   <li>
     <p>
-      <span>Date</span>
-      <span>Calorie Intake</span>
-      <span>Calorie Burnt</span>
+      <span class="date"><b>Date</b></span>
+      <span class="eat"><b>Calorie Intake</b></span>
+      <span class="workout"><b>Calorie Burnt</b></span>
     </p>
   </li>
   {{#each profile in controller}}
@@ -11,9 +11,27 @@
     <li>
       <p>
         {{!-- <span {{action "editTodo" on = "doubleClick"}}>{{profile.date}}</span> --}}
-        <span>{{input type="date" value=profile.date disabled=isNotEditing}}</span>
-        <span>{{input type="eat" value=profile.eat disabled=isNotEditing}}</span>
-        <span>{{input type="workout" value=profile.workout disabled=isNotEditing}}</span>
+        <span class="date">
+          {{#if isNotEditing}}
+            {{profile.date}}
+          {{else}}
+            {{input type="date" value=profile.date disabled=isNotEditing}}
+          {{/if}}
+        </span>
+        <span class="eat">
+          {{#if isNotEditing}}
+            {{profile.eat}}
+          {{else}}
+            {{input type="number" value=profile.eat disabled=isNotEditing}}
+          {{/if}}
+        </span>
+        <span class="workout">
+          {{#if isNotEditing}}
+            {{profile.workout}}
+          {{else}}
+            {{input type="number" value=profile.workout disabled=isNotEditing}}
+          {{/if}}
+        </span>
       </p>
     </li>
     {{!-- {{/link-to}} --}}

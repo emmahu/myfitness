@@ -141,10 +141,32 @@ div.recommendation > div {
 
 ul.is-profile li p span {
   display: inline-block;
-  width: 32.5%;
+  /*width: 32.5%;*/
   text-align: center;
   height: 30px;
-  line-height: 30px;
+  /*line-height: 30px;*/
+}
+
+ul.is-profile li p span.date {
+  width: 40%;
+}
+
+ul.is-profile li p span.eat {
+  width: 20%;
+  color: red;
+}
+
+ul.is-profile li p span.eat input {
+  color: red;
+}
+
+ul.is-profile li p span.workout {
+  width: 20%;
+  color: green;
+}
+
+ul.is-profile li p span.workout input {
+  color: green;
 }
 
 ul.is-profile li p span input {
