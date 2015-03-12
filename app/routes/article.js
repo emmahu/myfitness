@@ -10,7 +10,12 @@ var ArticleRoute = Ember.Route.extend({
   // },
   model: function(params) {
     return this.store.find('article', params.article_id);
+  },
 
+  activate: function() {
+    this._super();
+    window.scrollTo(0,0);
+    $('.nav').slideUp('fast');
   }
 });
 export default ArticleRoute;
