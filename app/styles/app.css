@@ -7,7 +7,7 @@
 body {
   /*margin: 0;*/
   /*padding: 0;*/
-  min-height: 700px;
+  /*min-height: 700px;*/
   /*font-family: 'HelveticaNeue-Light', Helvetica, Arial, Sans-Serif;*/
   color: black;
   padding-top: 50px;
@@ -138,6 +138,7 @@ div.recommendation > img {
 div.recommendation > div {
   margin-left: 110px;
 }
+
 ul.is-profile {
   background: #eeffff;
 }
@@ -179,6 +180,7 @@ ul.is-profile li p span input {
   line-height: 30px;
   font-size: 16px;
 }
+
 .destroy {
   /*position: absolute;*/
   top: 0;
@@ -202,13 +204,15 @@ footer {
   background-color: lightblue;
   color: white;
 }
-footer a:first-child{
+
+footer a:first-child {
   position: absolute;
   bottom: 0;
   height: 50px;
   left: 20%;
 }
-footer a:last-child{
+
+footer a:last-child {
   position: absolute;
   bottom: 0;
   height: 50px;
