@@ -5,6 +5,7 @@ var Article = DS.Model.extend({
   title: DS.attr('string'),
   date: DS.attr('string'),
   imgStyle: DS.attr('string'),
+  coverImage: DS.attr('string'),
   // summary: DS.attr('string'),
   tags: DS.attr(),
   text: DS.attr(),
