@@ -189,8 +189,13 @@ ul.is-profile li p span input {
   width: 40px;
   height: 33px;
   margin: auto 0;
-  font-size: 19px;
+  /* to solve ios safari button issue */
+  font-size: 0;
   color: lightblue;
+}
+
+.destroy span {
+  font-size: 19px;
 }
 
 footer {
@@ -202,6 +207,10 @@ footer {
   text-align: center;
   line-height: 50px;
   background-color: lightblue;
+  color: white;
+}
+
+footer a, footer a:hover, footer a:visited, footer a:link {
   color: white;
 }
 

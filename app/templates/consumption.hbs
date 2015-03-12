@@ -34,7 +34,9 @@
         </span>
         {{#if isNotEditing}}
         {{else}}
-          <button {{action "delete" profile.id}} class="destroy">✖</button>
+          <button {{action "delete" profile.id}} class="destroy">
+            <span>✖</span>
+          </button>
         {{/if}}
       </p>
     </li>
@@ -43,7 +45,7 @@
 
 </ul>
 <footer>
-  <a {{action 'create'}}>New</a>
+  <a href="#" {{action 'create'}}>New</a>
     {{#if isNotEditing}}
       <a href="#" {{action 'edit'}}>Edit</a>
     {{else}}
