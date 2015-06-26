@@ -3,6 +3,14 @@
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
+## Screenshots
+
+![Article Feed](https://raw.githubusercontent.com/emmahu/myfitness/master/screenshots/feed.png "Article Feed")
+
+![Article with Video](https://raw.githubusercontent.com/emmahu/myfitness/master/screenshots/article.png "Article with Video")
+
+![Calorie Profile](https://raw.githubusercontent.com/emmahu/myfitness/master/screenshots/profile.png "Calorie Profile")
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
